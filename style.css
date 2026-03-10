@@ -1,0 +1,259 @@
+  * {
+      margin: 0;
+      padding: 0;
+  }
+
+  body {
+      background-color: rgb(1, 1, 21);
+      color: white;
+      font-family: 'poppins', sens-serif;
+  }
+
+  nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 100px;
+      background-color: rgb(118, 118, 223);
+  }
+
+  nav ul {
+      display: flex;
+      justify-content: center;
+
+  }
+
+  nav ul li {
+      list-style: none;
+      margin: 0 23px;
+  }
+
+  nav ul li a {
+      text-decoration: none;
+      color: white;
+  }
+
+  nav ul li a:hover {
+      color: rgb(147, 147, 229);
+      font-size: 1.4rem;
+  }
+
+  main hr {
+      border: 0;
+      background-color: blue;
+      height: 1.2px;
+      margin: 27px 90px;
+  }
+
+  .lift {
+      font-size: 2rem;
+  }
+
+  .firstsection {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 40px 0;
+  }
+
+  .firstsection>div {
+      width: 30%;
+  }
+
+  .leftsection {
+      font-size: 2rem !important;
+  }
+
+  .leftsection .buttons {
+      padding: 10px 5px;
+  }
+
+  .leftsection .btn {
+      padding: 12px;
+      background-color: rgb(92, 92, 179);
+      color: white;
+      border: 2px solid white;
+      border-radius: 6px;
+      font-size: 20px;
+      cursor: pointer;
+  }
+
+  .rightsection img {
+      width: 90%;
+      margin: 50px
+  }
+
+  .purple {
+      color: rgb(155, 69, 235);
+  }
+
+  #element {
+      color: rgb(155, 69, 235);
+
+  }
+
+  .secondsection {
+      max-width: 80vw;
+      margin: auto;
+      height: 40vh;
+  }
+
+  .secondsection h1 {
+
+      font-family: var;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+  }
+
+  .aboutcontent {
+      max-width: 600px;
+      font-size: 1.05rem;
+      margin: 30px 10px;
+  }
+
+  .lightblue {
+      color: rgb(149, 149, 237);
+  }
+
+  .thirdsection {
+      max-width: 1300px;
+      margin: 0 auto;
+      padding: 5rem 1.5rem
+  }
+
+  .thirdsection h1 {
+      font-family: var;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+  }
+
+
+
+
+  .blur {
+      color: rgb(149, 149, 237);
+      margin: 50px;
+  }
+
+  .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+
+  }
+
+  .project-card {
+
+      border: 2px solid var;
+      border-radius: var;
+      padding: 3rem;
+      transition: transform var, box-shadow var;
+  }
+
+  .project-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(44, 41, 38, 0.08);
+  }
+
+  .project-image {
+
+
+      width: 100%;
+      aspect-ratio: 11 / 10;
+
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      font-family: var;
+      font-size: 2rem;
+      color: brown;
+      margin-bottom: 4.25rem;
+      width: 90%;
+      height: 34%;
+      object-fit: cover;
+      border-radius: 12px;
+  }
+
+  .project-card h3 {
+      margin-bottom: 0.5rem;
+  }
+
+  .project-card p {
+      color: blueviolet;
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+  }
+
+  .project-link {
+      color: rgb(81, 102, 111);
+      text-decoration: none;
+      font-weight: 800;
+      transition: gap;
+  }
+
+  .project-link:hover {
+      text-decoration: underline;
+  }
+
+  .skillblue {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 4rem 2.5rem;
+      margin: 90px;
+      color: rgb(149, 149, 237);
+
+  }
+
+  .fourthsection {
+      max-width: 1300px;
+      margin: 50px;
+      padding: 4rem 0.5rem
+  }
+
+  .fourthsection h1 {
+      font-family: var;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+  }
+
+  .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin: 30px 0px;
+      margin: 20px 50px;
+
+  }
+
+  .skill-tag {
+      border-color: var;
+  }
+
+  .fifthsection {
+      text-align: center;
+  }
+
+  .footer {
+      text-align: center;
+      padding: 2rem;
+      color: red;
+      font-size: 0.9rem;
+      border-top: 1px solid var;
+  }
+.skill-tag{
+
+
+  padding: 0.5rem 2rem;
+  background: rgb(10, 6, 6);
+  border: 1px solid var;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  transition: all var;
+  margin: 2rem;
+  }
+
+  .skill-tag:hover {
+      background: var;
+      color: rgb(117, 95, 190);
+  }
