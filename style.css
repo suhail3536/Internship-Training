@@ -1,7 +1,108 @@
   * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
   }
+
+  .container {
+      max-width: 1200px;
+      width: 90%;
+      margin: auto;
+
+  }
+
+  .container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+  }
+
+  .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+
+  }
+
+  .nav-link {
+      display: flex;
+      gap: 20px;
+  }
+
+  .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 50px 0;
+  }
+
+  .hero-text {
+      flex: 1;
+  }
+
+  .hero-image {
+      flex: 1;
+  }
+
+  .hero-image img {
+      max-width: 100%;
+  }
+
+  .projects {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+  }
+
+  .project-card {
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+  }
+
+  @media (max-width:768px) {
+
+      .navbar {
+          flex-direction: column;
+      }
+
+      .nav-links {
+          flex-direction: column;
+          align-items: center;
+      }
+
+      .hero {
+          flex-direction: column;
+          text-align: center;
+      }
+
+      .projects {
+          grid-template-columns: 1fr;
+      }
+
+  }
+
+  @media(max-width:768px) {
+      body {
+          background: red;
+
+      }
+
+      .projects {
+          grid-template-columns: 1fr;
+      }
+  }
+
+  img {
+      max-width: 100%;
+      height: auto;
+
+  }
+
 
   body {
       background-color: rgb(1, 1, 21);
@@ -53,12 +154,98 @@
       display: flex;
       justify-content: space-around;
       align-items: center;
-      margin: 40px 0;
+      flex-wrap: wrap;
   }
 
   .firstsection>div {
-      width: 30%;
+      width: 45%;
   }
+
+  @media (max-width:768px) {
+
+      .firstsection {
+          flex-direction: column;
+          text-align: center;
+      }
+
+      .firstsection>div {
+          width: 90%;
+      }
+
+      .rightsection img {
+          width: 100%;
+          max-width: 300px;
+          border-radius: 150px;
+      }
+
+  }
+
+  @media (max-width:768px) {
+
+      nav {
+          flex-direction: column;
+          height: auto;
+          padding: 20px;
+      }
+
+      nav ul {
+          flex-direction: column;
+          gap: 10px;
+          margin-top: 10px;
+      }
+
+      nav ul li {
+          margin: 5px 0;
+      }
+
+  }
+
+  @media (max-width:768px) {
+
+      .projects-grid {
+          grid-template-columns: 1fr;
+      }
+
+  }
+
+  .skill-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+  }
+
+  img {
+      max-width: 100%;
+      height: auto;
+  }
+
+  @media (max-width:768px) {
+
+      .leftsection {
+          font-size: 1.5rem;
+      }
+
+      .project-card {
+          padding: 20px;
+      }
+
+  }
+
+  @media (max-width:480px) {
+
+      .leftsection {
+          font-size: 1.2rem;
+      }
+
+      .btn {
+          font-size: 16px;
+          padding: 10px;
+      }
+
+  }
+
+
 
   .leftsection {
       font-size: 2rem !important;
@@ -216,17 +403,24 @@
       margin-bottom: 2rem;
   }
 
+
   .skills-list {
       display: flex;
       flex-wrap: wrap;
-      gap: 1rem;
-      margin: 30px 0px;
-      margin: 20px 50px;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 30px;
+      border-radius: 50px;
+      background-color: blueviolet;
 
   }
 
+
   .skill-tag {
-      border-color: var;
+      padding: 10px 20px;
+      background: black;
+      border: 1px solid gray;
+      border-radius: 30px;
   }
 
   .fifthsection {
@@ -240,20 +434,42 @@
       font-size: 0.9rem;
       border-top: 1px solid var;
   }
-.skill-tag{
 
+  .skill-tag {
+      padding: 0.5rem 2rem;
+      background: rgb(221, 56, 73);
+      border: 1px solid var;
+      border-radius: 50px;
+      font-size: 0.9rem;
+      font-weight: 700;
+      transition: all var;
+      margin: 2rem;
 
-  padding: 0.5rem 2rem;
-  background: rgb(10, 6, 6);
-  border: 1px solid var;
-  border-radius: 50px;
-  font-size: 0.9rem;
-  font-weight: 700;
-  transition: all var;
-  margin: 2rem;
   }
 
   .skill-tag:hover {
       background: var;
       color: rgb(117, 95, 190);
+  }
+
+  @media (max-width:768px) {
+
+      .firstsection {
+          flex-direction: column;
+          text-align: center;
+      }
+
+      .firstsection>div {
+          width: 100%;
+      }
+
+      .rightsection img {
+          width: 70%;
+          margin-top: 20px;
+      }
+
+      .skills-list {
+          justify-content: center;
+      }
+
   }

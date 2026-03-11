@@ -12,6 +12,8 @@
         * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
         }
 
         body {
@@ -60,15 +62,32 @@
             font-size: 2rem;
         }
 
-        .firstsection {
+        
+
+        firstsection {
             display: flex;
             justify-content: space-around;
             align-items: center;
-            margin: 40px 0;
+            flex-wrap: wrap;
         }
 
         .firstsection>div {
-            width: 30%;
+            width: 45%;
+        }
+
+
+        .firstsection {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .firstsection>div {
+            width: 45%;
         }
 
         .leftsection {
@@ -235,8 +254,9 @@
             display: flex;
             flex-wrap: wrap;
             gap: 1rem;
-            background-color: black;
+            background-color: rgb(56, 80, 200);
             margin: 30px 0px;
+            border-radius: 50px;
 
 
         }
@@ -248,7 +268,7 @@
 
         .skill-tag {
             padding: 0.5rem 2rem;
-            background: rgb(10, 6, 6);
+            background: rgb(19, 19, 26);
             border: 1px solid var;
             border-radius: 50px;
             font-size: 0.9rem;
@@ -262,6 +282,13 @@
             color: rgb(117, 95, 190);
 
             border-color: var;
+        }
+
+        .skill-tag {
+            padding: 10px 20px;
+            background: black;
+            border: 1px solid gray;
+            border-radius: 30px;
         }
 
         .fifthsection {
@@ -279,7 +306,30 @@
         html {
             scroll-behavior: smooth;
         }
+
+        @media (max-width:768px) {
+
+            .firstsection {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .firstsection>div {
+                width: 100%;
+            }
+
+            .rightsection img {
+                width: 70%;
+                margin-top: 20px;
+            }
+
+            .skills-list {
+                justify-content: center;
+            }
+
+        }
     </style>
+
 <body>
     <header>
         <nav>
@@ -407,7 +457,7 @@
             <h1>
                 <span class="skillblue">Skills</span>
             </h1>
-            <div class="skilllist">
+            <div class="skill-list">
                 <span class="skill-tag">HTML</span>
                 <span class="skill-tag">CSS</span>
                 <span class="skill-tag">Javascript</span>
