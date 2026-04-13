@@ -18,7 +18,7 @@
 
         body {
             background: rgb(9, 0, 15);
-        
+
         }
 
         body::before {
@@ -28,6 +28,7 @@
             height: 200%;
             background: url('https://www.transparenttextures.com/patterns/stardust.png');
             animation: moveStars 50s linear infinite;
+            pointer-events: none;
         }
 
         @keyframes moveStars {
@@ -356,11 +357,11 @@
             <div class="lift">Suhail Portfolio</div>
             <div class="right">
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact Me</a></li>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About">About Me</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#Contact">Contact Me</a></li>
                 </ul>
             </div>
         </nav>
@@ -375,11 +376,11 @@
                 <div class="buttons">
 
                     <a href="suhail cv.pdf " download>
-                        <button class="btn">Download Resume</button>
+                        <button id="downloadBtn" class="btn">Download Resume</button>
                     </a>
 
                     <a href="https://github.com/Suhail3536" target="_blank">
-                        <button class="btn">Visit Github</button>
+                        <button id="downloadBtn" class="btn">Visit Github</button>
                     </a>
 
                 </div>
@@ -523,7 +524,7 @@
             <p>I'm always open to new opportunities and collaborations.</p>
 
             <a href="mailto:suhailrajput9084@gmail.com" class="btn btn-secondary">Send Email</a>
-            
+
         </section>
 
 
@@ -539,18 +540,16 @@
     <footer class="footer">
         <p>&copy; 2026 Suhail. Built with HTML, CSS & JavaScript.</p>
     </footer>
-
-    <script src="script.js">
+    <script>
         document.getElementById("downloadBtn").addEventListener("click", function () {
-
             const link = document.createElement("a");
             link.href = "resume.pdf";
             link.download = "Suhail_Resume.pdf";
             link.click();
-
         });
     </script>
 
+<script src="script.js"></script>
 
 </body>
 
